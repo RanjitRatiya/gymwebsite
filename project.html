@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjit Fitness</title>
+    <style>
+        body {
+            color: white;
+
+            background: url(training-828741__340.webp);
+            background-size: cover;
+            background-attachment: fixed;
+
+
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+
+        .mid {
+            display: block;
+            width: 33%;
+            margin: 45px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 45px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .left img {
+            width: 136px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 19px;
+            font-size: 25px;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(148, 134, 134);
+        }
+
+        .container {
+            /* border: 2px solid white; */
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+        .container h1{
+            text-align: center;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+
+        }
+
+        .container button {
+            display: block;
+            width: 74%;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="logo.jpg" alt="">
+            <div>
+                Ranjit Fitness
+            </div>
+
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+                <li> <a href="#" class="active"> Home</a> </li>
+                <li> <a href="#"> About us</a></li>
+                <li> <a href="#">Fitness Center</a> </li>
+                <li> <a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- Right box for buttons -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Porbandar now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Age">
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Enter Your Gender">
+                        <div class="form-group">
+                            <input type="text" name="" placeholder="Enter Your Locality">
+                            <div class="form-group">
+                                <input type="email" name="" placeholder="Enter Your Email Id">
+
+                            </div>
+                        </div>
+                        <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
